@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Reset HTML default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* setting my font */
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding:15px;
+}
+/* main section code styles */
+main
+{
+    height:100vh;
+    display: flex;
+    background-color: #f9f9f9;
+}
+/* SideBar */
+.side-bar{
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    overflow-y: hidden;
+}
+/* responsively making the sidebar hidden */
+@media  screen and (max-width: 768px) {
+    .side-bar {
+        display: none;
+    }
+}
+
+/* Stylint the left section */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+}
+/* Styleing the cemter section and the form */
+.search {
+    display: flex;
+    margin-left: 30px;
+    padding:20px;
+}
+
+.search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+    left: 120px;
+}
+/* styling the input search form */
+.search input {
+    width: 600px;
+    padding: 10px;
+    border: 0px solid black;
+    height: 100%;
+    border-radius: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+/* styling the search and mic buttons */
+.search button {
+    height: 100%;
+    width: 60px;
+    border: 1px solid black;
+
+}
+
+.mic
+{
+    margin-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    left: 140px;
+    background-color: #ddd;
+}
+.material-icons
+{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+    padding: 10px;
+}
+.right{
+    position: relative;
+    left: 400px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.nav-link span{
+    margin-left: 15px;
+}
+.nav-link:hover{
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.active{
+    background: #e5e5e5;
+}
+
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+.content {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 250px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    margin-right: 35px;
+    margin-left: 30px;
+}
+
+.thumbnail{
+    width: 105%;
+    height: 170px;
+}
+.thumbnail img{
+    object-fit: cover;
+    height: 94%;
+    width: 105%;
+    border-radius: 3%;
+}
+
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.details
+{
+    display: flex;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title h3{
+    color:rgb(3,3,3);
+    line-height: 18px;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.title a,span{
+    text-decoration: none;
+    color: rgb(96,96,96);
+    font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN FOR 768 AND 900 PX */
+
+ @media screen and (max-width: 768px) {
+     .side-bar {
+         display: none;
+     }
+
+     .search {
+         display: none;
+     }
+ }
+
+   @media (max-width: 900px) {
+       .search input {
+           width: 25rem;
+       }
+   }
+.row
+{   display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;}
+
+.fulltop
+{
+    display: flex;
+    flex-direction: column;
+}
+.maintop{
+    display: flex;
+}
